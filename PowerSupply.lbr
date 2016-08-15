@@ -203,8 +203,8 @@
 <text x="1" y="9" size="1.27" layer="21">&gt;VALUE</text>
 </package>
 <package name="TRANSFORMER">
-<pad name="N" x="0" y="0" drill="2.5"/>
-<pad name="G" x="10" y="0" drill="2.5"/>
+<pad name="GND" x="0" y="0" drill="2.5"/>
+<pad name="N" x="10" y="0" drill="2.5"/>
 <pad name="L" x="-10" y="0" drill="2.5"/>
 <pad name="+" x="-5" y="5" drill="2.5"/>
 <pad name="-" x="5" y="5" drill="2.5"/>
@@ -488,7 +488,7 @@
 <pin name="5" x="5.08" y="7.62" visible="pad" length="short" rot="R270"/>
 <pin name="2" x="-5.08" y="-7.62" visible="pad" length="short" rot="R90"/>
 <pin name="3" x="5.08" y="-7.62" visible="pad" length="short" rot="R90"/>
-<pin name="4" x="5.08" y="0" visible="off" length="middle"/>
+<pin name="4" x="10.16" y="0" visible="off" length="middle" rot="R180"/>
 </symbol>
 <symbol name="DIODE">
 <wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
@@ -640,7 +640,7 @@
 <connect gate="G$1" pin="1" pad="L"/>
 <connect gate="G$1" pin="2" pad="N"/>
 <connect gate="G$1" pin="3" pad="-"/>
-<connect gate="G$1" pin="4" pad="G"/>
+<connect gate="G$1" pin="4" pad="GND"/>
 <connect gate="G$1" pin="5" pad="+"/>
 </connects>
 <technologies>
